@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="c.css"> -->
+    <title>JS Tutorial</title>
+  </head>
+  <body>
+    <!-- *********************************** Navbar *********************************** -->
+
+    <h1 style="text-align: center; color:wheat; background-color: rgb(31, 11, 62); padding: 3px;">JavaScript Tutorial </h1>
+    <div class="py" style="margin-left: 20px; margin-right: 20px;">
+
+     <h2> Why Study JavaScript?</h2>
+     <h3> JavaScript is one of the 3 languages all web developers must learn:</h3>
+
+     <p> 1. HTML to define the content of web pages
+      <br>
+      2. CSS to specify the layout of web pages
+      <br>
+      3. JavaScript to program the behavior of web pages
+      <br>
+      </p>
+
+     <h2> On Page Script</h2>
+      Adding internal JavaScript to HTML
+      <div class="alert alert-primary" role="alert">
+        <<script type="text/javascript"> //JS code goes here <</script>/script>
+      </div>
+      
+      <h2> External JS File</h2>
+      Adding external JavaScript to HTML
+      <div class="alert alert-primary" role="alert">
+        <<script src="filename.js"> script src="filename.js"><</script>/script>
+      </div>
+      
+
+      <h2>JavaScript Can Change HTML Content</h2>
+     <p> One of many JavaScript HTML methods is getElementById().
+      <br>
+      The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":
+      <br>
+       <li> Example</li></p>
+      
+        <div class="alert alert-primary" role="alert">
+          document.getElementById("demo").innerHTML = "Hello JavaScript";
+        </div>
+
+
+
+        <h2>Functions</h2>    
+      JavaScript Function syntax
+      <div class="alert alert-primary" role="alert">
+        function nameOfFunction() {  <br>
+          // function body <br>
+       }
+        </div>
+
+    <h2>DOM Element</h2>
+      Changing content of a DOM Element
+    <div class="alert alert-primary" role="alert">
+  document.getElementById("elementID").innerHTML = "Hello World!";
+  </div>
+
+    Output  <br>
+    This will print the value of a in JavaScript console
+    <div class="alert alert-primary" role="alert">
+      console.log(a);
+    </div>
+
+<h2>Conditional Statements</h2>
+Conditional statements are used to perform operations based on some conditions.
+
+<h3>If Statement</h3>
+The block of code to be executed, when the condition specified is true.
+<div class="alert alert-primary" role="alert">
+  if (condition) {  <br>
+    // block of code to be executed if the condition is true
+ <br>  }
+  </div>
+
+<h3>If-else Statement</h3>
+If the condition for the if block is false, then the else block will be executed.
+<div class="alert alert-primary" role="alert">
+  if (condition) {  <br>
+    // block of code to be executed if the condition is true  <br>
+} else {  <br>
+    // block of code to be executed if the condition is false  <br>
+}
+  </div>
+
+<h3>Else-if Statement</h3>
+A basic if-else ladder
+<div class="alert alert-primary" role="alert">
+  if (condition1) {  <br>
+    // block of code to be executed if condition1 is true    <br>
+} <br> else if (condition2) {  
+  <br>  // block of code to be executed if the condition1 is false and condition2 is true
+}<br> else {  
+  <br>  // block of code to be executed if the condition1 is false and condition2 is false
+}
+  </div>
+
+<h2>Switch Statement</h2>
+Switch case statement in JavaScript
+<div class="alert alert-primary" role="alert">
+  switch (expression) {  <br>
+    case x:   <br>
+        // code block
+       <br> break;
+   <br> case y:
+      <br>  // code block
+      <br>  break;
+   <br> default:
+     <br>   // code block
+   <br> }
+  </div>
+
+<h2>Iterative Statements (Loops)</h2>
+Iterative statement facilitates programmer to execute any block of code lines repeatedly and can be controlled as per conditions added by the programmer.
+
+<h3>For Loop</h3>
+For loop syntax in javascript
+<div class="alert alert-primary" role="alert">
+  for (initialization; condition; incrementation;) {    <br>
+    // code block to be executed   <br>
+}
+  </div>
+
+Example:
+<div class="alert alert-primary" role="alert">
+  for (let i = 0; i < 5; i++) {  <br>
+    text += "Iteration number: " + i + "<br>";  <br>
+}
+  </div>
+
+<h3>While Loop</h3>
+Runs the code till the specified condition is true
+<div class="alert alert-primary" role="alert">
+  while (condition) {  <br>
+    // code block to be executed   <br>
+}
+  </div>
+
+<h3>Do While Loop</h3>
+A do while loop is executed at least once despite the condition being true or false
+<div class="alert alert-primary" role="alert">
+  do { <br>
+    // run this code in block
+  <br>  i++;
+<br>} while (condition);
+  </div>
+
+<h2>Strings</h2>
+The string is a sequence of characters that is used for storing and managing text data.
+
+<h4>charAt method</h4>
+Returns the character from the specified index.
+<div class="alert alert-primary" role="alert">
+  str.charAt(3)
+  </div>
+
+<h4>concat method</h4>
+Joins two or more strings together.
+<div class="alert alert-primary" role="alert">
+  str1.concat(str2)
+  </div>
+
+<h4>index of method</h4>
+Returns the index of the first occurrence of the specified character from the string else -1 if not found.
+<div class="alert alert-primary" role="alert">
+  str.indexOf('substr')
+  </div>
+
+<h4>match method</h4>
+Searches a string for a match against a regular expression.
+<div class="alert alert-primary" role="alert">
+  str.match(/(chapter \d+(\.\d)*)/i;)
+  </div>
+
+<h4>replace method</h4>
+Searches a string for a match against a specified string or char and returns a new string by replacing the specified values.
+<div class="alert alert-primary" role="alert">
+  str1.replace(str2)
+  </div>
+
+<h4>search method</h4>
+Searches a string against a specified value.
+<div class="alert alert-primary" role="alert">
+  str.search('term')
+  </div>
+
+<h4>split method</h4>
+Splits a string into an array consisting of substrings.
+<div class="alert alert-primary" role="alert">
+  str.split('\n')
+  </div>
+
+<h4>substring method</h4>
+Returns a substring of a string containing characters from the specified indices.
+<div class="alert alert-primary" role="alert">
+  str.substring(0,5)
+  </div>
+
+<h2>Arrays</h2>
+The array is a collection of data items of the same type. In simple terms, it is a variable that contains multiple values.
+<br>
+<h2>variable</h2>
+Containers for storing data.
+<div class="alert alert-primary" role="alert">
+  var fruit = ["element1", "element2", "element3"];
+  </div>
+
+<h4>concat method</h4>
+Joins two or more arrays together.
+<div class="alert alert-primary" role="alert">
+  concat()
+  </div>
+
+<h4>indexOf method</h4>
+Returns the index of the specified item from the array.
+<div class="alert alert-primary" role="alert">
+  indexOf()
+  </div>
+
+<h4>join method</h4>
+Converts the array elements to a string.
+<div class="alert alert-primary" role="alert">
+  join()
+  </div>
+
+<h4>pop method</h4>
+Deletes the last element of the array.
+<div class="alert alert-primary" role="alert">
+  pop()
+  </div>
+
+<h4>reverse method</h4>
+This method reverses the order of the array elements.
+<div class="alert alert-primary" role="alert">
+  reverse()
+  </div>
+
+<h4>sort method</h4>
+Sorts the array elements in a specified manner.
+<div class="alert alert-primary" role="alert">
+  sort()
+  </div>
+
+<h4>toString method</h4>
+Converts the array elements to a string.
+<div class="alert alert-primary" role="alert">
+  toString()
+  </div>
+
+<h4>valueOf method</h4>
+returns the relevant Number Object holding the value of the argument passed
+<div class="alert alert-primary" role="alert">
+  valueOf()
+  </div>
+<br>
+<h2>Number Methods</h2>
+JS math and number objects provide several constant and methods to perform mathematical operations.
+
+<h4>toExponential method</h4>
+Converts a number to its exponential form.
+<div class="alert alert-primary" role="alert">
+  toExponential()
+  </div>
+
+<h4>toPrecision method</h4>
+Formats a number into a specified length.
+<div class="alert alert-primary" role="alert">
+  toPrecision()
+  </div>
+
+<h4>toString method</h4>
+Converts an object to a string
+<div class="alert alert-primary" role="alert">
+  toString()
+  </div>
+
+<h4>valueOf method</h4>
+Returns the primitive value of a number.
+<div class="alert alert-primary" role="alert">
+  valueOf()
+  </div>
+
+ <h2>Maths Methods</h2>
+<h4>ceil method</h4>
+Rounds a number upwards to the nearest integer, and returns the result
+<div class="alert alert-primary" role="alert">
+  ceil(x)
+  </div>
+
+<h4>exp method</h4>
+Returns the value of E^x.
+<div class="alert alert-primary" role="alert">
+  exp(x)
+  </div>
+
+<h4>log method</h4>
+Returns the logarithmic value of x.
+<div class="alert alert-primary" role="alert">
+  log(x)
+  </div>
+
+<h4>pow method</h4>
+Returns the value of x to the power y.
+<div class="alert alert-primary" role="alert">
+  pow(x,y)
+  </div>
+
+<h4>random method</h4>
+Returns a random number between 0 and 1.
+<div class="alert alert-primary" role="alert">
+  random()
+  </div>
+
+<h4>sqrt method</h4>
+Returns the square root of a number x
+<div class="alert alert-primary" role="alert">
+  sqrt(x)
+  </div>
+
+<h2>Dates</h2>
+Date object is used to get the year, month and day. It has methods to get and set day, month, year, hour, minute, and seconds.
+
+<h4>Pulling Date from the Date object</h4>
+Returns the date from the date object
+<div class="alert alert-primary" role="alert">
+  getDate()
+  </div>
+
+<h4>Pulling Day from the Date object</h4>
+Returns the day from the date object
+<div class="alert alert-primary" role="alert">
+  getDay()
+  </div>
+
+<h4>Pulling Hours from the Date object</h4>
+Returns the hours from the date object
+<div class="alert alert-primary" role="alert">
+  getHours()
+  </div>
+
+<h4>Pulling Minutes from the Date object</h4>
+Returns the minutes from the date object
+<div class="alert alert-primary" role="alert">
+  getMinutes()
+  </div>
+
+<h4>Pulling Seconds from the Date object</h4>
+Returns the seconds from the date object
+<div class="alert alert-primary" role="alert">
+  getSeconds()
+  </div>
+
+<h4>Pulling Time from the Date object</h4>
+Returns the time from the date object
+<div class="alert alert-primary" role="alert">
+  getTime()
+  </div>
+
+<h2>Mouse Events</h2>
+Any change in the state of an object is referred to as an Event. With the help of JS, you can handle events, i.e., how any specific HTML tag will work when the user does something.
+
+<h4>click</h4>
+Fired when an element is clicked
+<div class="alert alert-primary" role="alert">
+  element.addEventListener('click', () => {  <br>
+    // Code to be executed when the event is fired  
+<br>});
+  </div>
+
+<h4>oncontextmenu</h4>
+Fired when an element is right-clicked
+<div class="alert alert-primary" role="alert">
+  element.addEventListener('contextmenu', () => {  <br>
+    // Code to be executed when the event is fired  <br>
+});
+  </div>
+
+<h4>dblclick</h4>
+Fired when an element is double-clicked
+<div class="alert alert-primary" role="alert">
+  element.addEventListener('dblclick', () => {  <br>
+    // Code to be executed when the event is fired  <br>
+});
+  </div>
+
+<h4>mouseenter</h4>
+Fired when an element is entered by the mouse arrow
+<div class="alert alert-primary" role="alert">
+  element.addEventListener('mouseenter', () => {  <br>
+    // Code to be executed when the event is fired  <br>
+});
+  </div>
+
+<h4>mouseleave</h4>
+Fired when an element is exited by the mouse arrow
+<div class="alert alert-primary" role="alert">
+  element.addEventListener('mouseleave', () => {  <br>
+    // Code to be executed when the event is fired<br>
+});
+  </div>
+
+<h4>mousemove</h4>
+Fired when the mouse is moved inside the element
+<div class="alert alert-primary" role="alert">
+  element.addEventListener('mousemove', () => {<br>
+    // Code to be executed when the event is fired<br>
+});
+  </div>
+
+<h2>Keyboard Events</h2>
+<h4>keydown</h4>
+Fired when the user is pressing a key on the keyboard
+<div class="alert alert-primary" role="alert">
+  element.addEventListener('keydown', () => {<br>
+    // Code to be executed when the event is fired<br>
+});
+  </div>
+
+<h4>keypress</h4>
+Fired when the user presses the key on the keyboard
+<div class="alert alert-primary" role="alert">
+  element.addEventListener('keypress', () => {<br>
+    // Code to be executed when the event is fired<br>
+});
+  </div>
+
+<h4>keyup</h4>
+Fired when the user releases a key on the keyboard
+<div class="alert alert-primary" role="alert">
+  element.addEventListener('keyup', () => {<br>
+    // Code to be executed when the event is fired<br>
+});
+  </div>
+
+<h2>Errors</h2>
+Errors are thrown by the compiler or interpreter whenever they find any fault in the code, and it can be of any type like syntax error, run-time error, logical error, etc. JS provides some functions to handle the errors.
+
+<h2>try and catch</h2>
+Try the code block and execute catch when err is thrown
+<div class="alert alert-primary" role="alert">
+  try {  <br>
+    Block of code to try<br>
+    }<br>
+catch (err) {<br>
+    Block of code to handle errors<br>
+}<br>
+  </div>
+
+<h2>Window Methods</h2>
+Methods that are available from the window object
+
+<h4>alert method</h4>
+Used to alert something on the screen
+<div class="alert alert-primary" role="alert">
+  alert()
+  </div>
+
+<h4>blur method</h4>
+The blur() method removes focus from the current window.
+<div class="alert alert-primary" role="alert">
+  blur()
+  </div>
+
+<h4>setInterval</h4>
+Keeps executing code at a certain interval
+<div class="alert alert-primary" role="alert">
+  setInterval(() => { <br>
+    // Code to be executed <br>
+}, 1000);
+  </div>
+
+<h4>setTimeout</h4>
+Executes the code after a certain interval of time
+<div class="alert alert-primary" role="alert">
+  setTimeout(() => { <br>
+    // Code to be executed  <br>
+}, 1000);
+  </div>
+
+<h4>close</h4>
+The Window. close() method closes the current window
+<div class="alert alert-primary" role="alert">
+  window.close()
+  </div>
+
+<h4>confirm</h4>
+The window.confirm() instructs the browser to display a dialog with an optional message, and to wait until the user either confirms or cancels
+<div class="alert alert-primary" role="alert">
+  window.confirm('Are you sure?')
+  </div>
+
+<h4>open</h4>
+Opens a new window
+<div class="alert alert-primary" role="alert">
+  window.open("https://www.google.com");
+  </div>
+
+<h4>prompt</h4>
+Prompts the user with a text and takes a value. Second parameter is the default value
+<div class="alert alert-primary" role="alert">
+  var name = prompt("What is your name?", "Hari");
+  </div>
+
+<h4>scrollBy</h4>
+<div class="alert alert-primary" role="alert">
+  window.scrollBy(100, 0); // Scroll 100px to the right
+  </div>
+
+<h4>scrollTo</h4>
+Scrolls the document to the specified coordinates.
+<div class="alert alert-primary" role="alert">
+  window.scrollTo(500, 0); // Scroll to horizontal position 500
+  </div>
+
+<h4>clearInterval</h4>
+Clears the setInterval. var is the value returned by setInterval call
+<div class="alert alert-primary" role="alert">
+  clearInterval(var) 
+  </div>
+
+<h4>clearTimeout</h4>
+Clears the setTimeout. var is the value returned by setTimeout call
+<div class="alert alert-primary" role="alert">
+  clearTimeout(var)
+  </div>
+
+<h4>stop</h4>
+Stops the further resource loading
+<div class="alert alert-primary" role="alert">
+  stop()
+  </div>
+
+<h2>Query/Get Elements</h2>
+The browser creates a DOM (Document Object Model) whenever a web page is loaded, and with the help of HTML DOM, one can access and modify all the elements of the HTML document.
+
+<h4>querySelector</h4>
+Selector to select first matching element
+<div class="alert alert-primary" role="alert">
+  document.querySelector('css-selectors')
+  </div>
+
+<h4>querySelectorAll</h4>
+A selector to select all matching elements
+<div class="alert alert-primary" role="alert">
+  document.querySelectorAll('css-selectors', ...)
+  </div>
+
+<h3>getElementsByTagName</h3>
+Select elements by tag name
+<div class="alert alert-primary" role="alert">
+  document.getElementsByTagName('element-name')
+  </div>
+
+<h4>getElementsByClassName</h4>
+Select elements by class name
+<div class="alert alert-primary" role="alert">
+  document.getElementsByClassName('class-name')
+  </div>
+
+<h4>Get Element by Id</h4>
+Select an element by its id
+<div class="alert alert-primary" role="alert">
+  document.getElementById('id')
+  </div>
+
+<h3>Creating Elements</h3>
+Create new elements in the DOM
+
+<h3>createElement</h3>
+Create a new element
+<div class="alert alert-primary" role="alert">
+  document.createElement('div')
+  </div>
+
+<h3>createTextNode</h3>
+Create a new text node
+<div class="alert alert-primary" role="alert">
+  document.createTextNode('some text here')
+  </div>
+
+ 
+      
+
+
+
+
+        <div class="alert alert-success" role="alert">
+          <h5 style="font-family: 'Courier New', Courier, monospace; text-align: center;">Thank you</h5>
+       </div>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>
