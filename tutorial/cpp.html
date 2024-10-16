@@ -1187,233 +1187,202 @@
     <h3 style="color:rgb(144, 12, 177) ;"> Class </h3>
     
     <div class="alert alert-primary" role="alert">
-    
+        class Class_name {  <br>
+            public: // Access specifier  <br>
+            // fields <br>
+            // functions  <br>
+            // blocks  <br>
+            };
     </div>
  
-    class Class_name {
-    public: // Access specifier
-    // fields
-    // functions
-    // blocks
-    };
+    
     <h3 style="color:rgb(144, 12, 177) ;"> object </h3>
     
-    Class_name ObjectName;
-    Constructors
+    <div class="alert alert-primary" role="alert">
+        Class_name ObjectName;
+    </div>
+    
+    <h3 style="color:rgb(144, 12, 177) ;">Constructors</h3>
     It is a special method that is called automatically as soon as the object is created.
     <div class="alert alert-primary" role="alert">
-    
+        class className { // The class     <br>
+            public: // Access specifier<br>
+            className() { // Constructor<br>
+            cout << "StarXCoder";<br>
+            }<br>
+            };<br>
+            <br>
+            int main() {<br>
+            className obj_name; <br>
+            return 0;<br>
+            }
     </div>
  
-    class className { // The class
-    public: // Access specifier
-    className() { // Constructor
-    cout << "Code With Harry";
-    }
-    };
-    
-    int main() {
-    className obj_name; 
-    return 0;
-    }
+   
     <h3 style="color:rgb(144, 12, 177) ;"> Encapsulation </h3>
     
     Data encapsulation is a mechanism of bundling the data, and the functions that use them and data abstraction is a mechanism of exposing only the interfaces and hiding the implementation details from the user.
     <div class="alert alert-primary" role="alert">
-    
-    
- 
-    #include<iostream> 
-    using namespace std; 
-    class ExampleEncap{ 
-    private: 
-    /* Since we have marked these data members private, 
-    * any entity outside this class cannot access these 
-    * data members directly, they have to use getter and 
-    * setter functions. 
-    */ 
-    int num; 
-    char ch; 
-    public: 
-    /* Getter functions to get the value of data members. 
-    * Since these functions are public, they can be accessed 
-    * outside the class, thus provide the access to data members 
-    * through them 
-    */ 
-    int getNum() const { 
-    return num; 
-    } 
-    char getCh() const { 
-    return ch; 
-    } 
-    /* Setter functions, they are called for assigning the values 
-    * to the private data members. 
-    */ 
-    void setNum(int num) { 
-    this->num = num; 
-    } 
-    void setCh(char ch) { 
-    this->ch = ch; 
-    } 
-    }; 
-    int main(){ 
-    ExampleEncap obj; 
-    obj.setNum(100); 
-    obj.setCh('A'); 
-    cout<<obj.getNum()<<endl; 
-    cout<<<obj.getCh()<<endl; 
-    return 0; 
-    }
-    </div>
+     #include<iostream> <br>
+    using namespace std; <br><br>
+    class ExampleEncap{ <br><br>
+    private: <br>
+    /* Since we have marked these data members private,  any entity outside this class cannot access these <br> data members directly, they have to use getter and 
+    <br>* setter functions.<br> 
+    */ <br>
+    int num; <br>
+    char ch; <br><br>
+    public: <br>
+    /* Getter functions to get the value of data members. <br>
+    * Since these functions are public, they can be accessed <br>
+    * outside the class, thus provide the access to data members <br>
+    * through them <br>
+    */ <br><br>
+    int getNum() const { <br>
+    return num; <br>
+    } <br>
+    char getCh() const { <br>
+    return ch; <br>
+    }<br><br>
+    /* Setter functions, they are called for assigning the values <br>
+    * to the private data members. <br>
+    */ <br>
+    void setNum(int num) { <br>
+    this->num = num; <br>
+    } <br>
+    void setCh(char ch) { <br>
+    this->ch = ch; <br>
+    } <br>
+    }; <br>
+    int main(){ <br>
+    ExampleEncap obj; <br>
+    obj.setNum(100); <br>
+    obj.setCh('A'); <br>
+    cout<<obj.getNum()<<endl; <br>
+    cout<<<obj.getCh()<<endl; <br>
+    return 0; <br>
+    }<br>
+    </div><br>
 
 
     <h3 style="color:rgb(144, 12, 177) ;"> File Handling </h3>
     
     File handling refers to reading or writing data from files. C provides some functions that allow us to manipulate data in the files.
-    
+    <br>
     Creating and writing to a text file
     <div class="alert alert-primary" role="alert">
+        #include <iostream><br>
+            #include <fstream><br>
+            using namespace std;<br>
+            <br>
+            int main() {<br>
+            // Create and open a text file<br>
+            ofstream MyFile("filename.txt");<br>
+            <br>
+            // Write to the file<br>
+            MyFile << "File Handling in C++";<br>
+            <br>
+            <b> //Close the file</b><br>
+            MyFile.close();<br>
+            }<br>
+            </div>
+
+    <h4> read the file  </h4>
+    It allows us to read the file line by line<br>
+    <br>
+    <h4>getline()</h4>
+    Opening a File<br>
+    It opens a file in the C++ program<br>
     
-    </div>
- 
-    #include <iostream>
-    #include <fstream>
-    using namespace std;
-    
-    int main() {
-    // Create and open a text file
-    ofstream MyFile("filename.txt");
-    
-    // Write to the file
-    MyFile << "File Handling in C++";
-    
-    // Close the file
     <div class="alert alert-primary" role="alert">
-    
+        void open(const char* file_name,ios::openmode mode);<br>
+       
     </div>
  
-    MyFile.close();
-    }
-    Reading the file
-    It allows us to read the file line by line
     
-    getline()
-    Opening a File
-    It opens a file in the C++ program
-    
-    void open(const char* file_name,ios::openmode mode);
-    in
-    Opens the file to read(default for ifstream)
+        <h4>in</h4> 
+    Opens the file to read(default for ifstream)<br>
     <div class="alert alert-primary" role="alert">
-    
+        fs.open ("test.txt", std::fstream::in)<br>
     </div>
  
-    fs.open ("test.txt", std::fstream::in)
-    out
-    Opens the file to write(default for ofstream)
+    
+    <h4>out</h4>
+    Opens the file to write(default for ofstream)<br>
     <div class="alert alert-primary" role="alert">
-    
+        fs.open ("test.txt", std::fstream::out)<br>
     </div>
  
-    fs.open ("test.txt", std::fstream::out)
-    binary
-    Opens the file in binary mode
+    
+    <h4>binary</h4>
+    Opens the file in binary mode<br>
     <div class="alert alert-primary" role="alert">
-    
+        fs.open ("test.txt", std::fstream::binary)<br>
     </div>
  
-    fs.open ("test.txt", std::fstream::binary)
-    app
+    
+    <h4>app</h4>
     Opens the file and appends all the outputs at the end
     <div class="alert alert-primary" role="alert">
-    
+        fs.open ("test.txt", std::fstream::app)
     </div>
  
-    fs.open ("test.txt", std::fstream::app)
-    ate
+   
+<h4>ate</h4>
     Opens the file and moves the control to the end of the file
     <div class="alert alert-primary" role="alert">
-    
+        fs.open ("test.txt", std::fstream::ate)
     </div>
  
-    fs.open ("test.txt", std::fstream::ate)
-    trunc
+    
+<h4>trunc</h4>
     Removes the data in the existing file
     <div class="alert alert-primary" role="alert">
-    
+        fs.open ("test.txt", std::fstream::trunc)
     </div>
  
-    fs.open ("test.txt", std::fstream::trunc)
-    nocreate
+   
+<h4>nocreate</h4>
     Opens the file only if it already exists
     <div class="alert alert-primary" role="alert">
-    
+        fs.open ("test.txt", std::fstream::nocreate)
     </div>
  
-    fs.open ("test.txt", std::fstream::nocreate)
-    noreplace
+   
+<h4>noreplace</h4>
     Opens the file only if it does not already exist
     <div class="alert alert-primary" role="alert">
-    
+        fs.open ("test.txt", std::fstream::noreplace)
     </div>
  
-    fs.open ("test.txt", std::fstream::noreplace)
-    Closing a file
+    
+<h4>Closing a file</h4>
     It closes the file
     <div class="alert alert-primary" role="alert">
-    
+        myfile.close()
     </div>
  
-    myfile.close()
-    Exception Handling
+    
+    <h3 style="color:rgb(144, 12, 177) ;">Exception Handling</h3>
     An exception is an unusual condition that results in an interruption in the flow of the program.
     
-    <h3 style="color:rgb(144, 12, 177) ;"> Constants </h3>
-    try and catch block
+    
+    <h4>try and catch block</h4>
     A basic try-catch block in python. When the try block throws an error, the control goes to the except block
     <div class="alert alert-primary" role="alert">
-    
+        try {<br>
+            // code to try<br>
+            throw exception; // If a problem arises, then throw an exception<br>
+            }<br>
+            catch () {  <br>
+            // Block of code to handle errors<br>
+            }
     </div>
  
-    try {
-    // code to try
-    throw exception; // If a problem arises, then throw an exception
-    }
-    catch () {
-    // Block of code to handle errors
-    }
+    
    
 
-   <div class="alert alert-primary" role="alert">
-    
-   </div>
-
-
-   <div class="alert alert-primary" role="alert">
-    
-   </div>
-
-   <div class="alert alert-primary" role="alert">
-    
-   </div>
-
-   <div class="alert alert-primary" role="alert">
-    
-   </div>
-
-   
-   
-
-
-
-
-
-
-
-
-
-
-
+  
    <div class="alert alert-success" role="alert">
     <h5 style="font-family: 'Courier New', Courier, monospace; text-align: center;">Thank you</h5>
  </div>

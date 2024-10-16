@@ -75,19 +75,518 @@
 
     <h1 style="text-align: center; color:wheat; background-color: rgb(31, 11, 62); padding: 3px;">JAVA Tutorial </h1>
     <div class="py" style="margin-left: 20px; margin-right: 20px;">
+      <br>
+      <h2 style="color:rgb(144, 12, 177) ;">Introduction</h2>
+      <p>Java is a programming language and platform that has been widely used since its development by James Gosling in 1991. It follows the Object-oriented Programming concept and can run programs written on any OS platform. Java is a high-level, object-oriented, secure, robust, platform-independent, multithreaded, and portable programming language all those words are collectively called Java Buzzwords.</p>
 
+      <p>This Java Tutorial is designed for beginners as well as experienced professionals. Whether you’re starting your Java journey and looking to understand the basics of Java or its advanced concepts, this free Java tutorial is the perfect resource for you.
 
+       <h4> What is Java?</h4>
+        Developed by Sun Microsystems in 1995, Java is a highly popular, object-oriented programming language. This platform independent programming language is utilized for Android development, web development, artificial intelligence, cloud applications, and much more.
+        
+        In this tutorial, we will cover everything from the basics of Java syntax to advanced topics like object-oriented programming and exception handling. So, by the end of this tutorial, you will have a strong understanding of Java and be ready to start writing your own Java applications. </p>
 
+        <p>Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is intended to let application developers write once, and run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java was first released in 1995 and is widely used for developing applications for desktop, web, and mobile devices. Java is known for its simplicity, robustness, and security features, making it a popular choice for enterprise-level applications.
+        <br>
+          Java was developed by James Gosling at Sun Microsystems Inc in May 1995 and later acquired by Oracle Corporation. It is a simple programming language. Java makes writing, compiling, and debugging programming easy. It helps to create reusable code and modular programs. Java is a class-based, object-oriented programming language and is designed to have as few implementation dependencies as possible. A general-purpose programming language made for developers to write once run anywhere that is compiled Java code can run on all platforms that support Java. Java applications are compiled to byte code that can run on any Java Virtual Machine. The syntax of Java is similar to C/C++.</p>
 
-
+          <p><h5>Basic Terminologies in Java</h5>
+            1. Class: The class is a blueprint (plan) of the instance of a class (object). It can be defined as a logical template that share common properties and methods.
+            <br>
+            Example1: Blueprint of the house is class.  <br>
+            Example2: In real world, Alice is an object of the “Human” class.   <br><br>
+            2. Object : The object is an instance of a class. It is an entity that has behavior and state.
+            <br>
+            Example: Dog, Cat, Monkey etc. are the object of “Animal” class.  <br>
+            Behavior: Running on the road. <br><br>
+            3. Method : The behavior of an object is the method.  <br>
+            
+            Example : The fuel indicator indicates the amount of fuel left in the car.  <br><br>
+            4. Instance variables : Every object has its own unique set of instance variables. The state of an object is generally created by the values that are assigned to these instance variables.
+            <br>
+            Example: Steps to compile and run a java program in a console</p>
+            
         <div class="alert alert-primary" role="alert">
-    
+          import java.util.*; <br>
+          public class Main {  <br>
+              public static void main(String[] args)  <br>
+              {  <br>
+                  System.out.println("Hello world!");  <br>
+              }  <br>
+          }
         </div>
 
-        <div class="alert alert-primary" role="alert">
-    
-        </div>
+        <h2 style="color:rgb(144, 12, 177) ;">Comments in Java</h2>
 
+There are three types of comments in Java.
+
+<h4>i. Single line Comment</h4>
+<div class="alert alert-primary" role="alert">
+  // System.out.println("This is an comment.");
+</div>
+
+
+<h4>ii. Multi-line Comment</h4>
+<div class="alert alert-primary" role="alert">
+  /*    <br>
+  System.out.println("This is the first line comment.");    <br>
+  System.out.println("This is the second line comment.");  <br>
+*/
+</div>
+
+<!-- ************************************ variables ********************************************* -->
+
+<h2 style="color:rgb(144, 12, 177) ;">  Variables</h2>
+
+A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+
+<br>
+
+<h5>*Rules for C variables:-</h5>
+
+<p>A variable name must start with a letter or the underscore character
+    <br>
+    A variable name cannot start with a number <br>
+    
+    A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+    <br>
+    Variable names are case-sensitive (age, Age and AGE are three different variables).
+    <br>
+    A variable cannot include any white space in its name.
+    <br>
+    The name should not be a reserved keyword or any special character.
+</p>
+
+    <br>
+    
+
+ <!-- *************************** operator *************************** -->
+
+ <h3 style="color:rgb(144, 12, 177) ;"> Operators</h3>
+
+
+ <h4>What are the Java Operators?</h4>
+Operators in Java are the symbols used for performing specific operations in Java. Operators make tasks like addition, multiplication, etc which look easy although the implementation of these tasks is quite complex.
+   <br>
+   This section covers all types of operators. </p> 
+    <br>
+
+
+    <!-- ************ Ao ******* -->
+   <table class="table">
+       <thead class="thead-dark">
+         <tr>
+           <th scope="col">Arithmetic operator</th>
+           <th scope="col" style="color:rgb(24, 24, 24);">.</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <th scope="row">+</th>
+           <td>Addition</td>
+         </tr>
+         <tr>
+           <th scope="row">-</th>
+           <td>Subtraction</td>
+         </tr>
+         <tr>
+           <th scope="row">/</th>
+           <td>Division</td>
+         </tr>
+         <tr>
+           <th scope="row">*</th>
+           <td>Multiplication</td>
+         </tr>
+         <tr>
+           <th scope="row">%</th>
+           <td>Modulo</td>
+         </tr>
+        
+       </tbody>
+     </table>
+     for eg. <br>
+
+     <div class="alert alert-primary" role="alert">
+      
+      // Arithmetic Operators <br>
+      import java.io.*;<br>
+      <br>
+      // Drive Class<br>
+      class Main {  <br>
+            // Main Function<br>
+          public static void main (String[] args) {<br>
+            <br>
+              // Arithmetic operators on integers<br>
+              int a = 10;<br>
+              int b = 3;<br><br>
+            
+              // Arithmetic operators on Strings<br>
+              String num1 = "15";<br>
+              String num2 = "25";<br><br>
+      
+              // Convert Strings to integers<br>
+              int a1 = Integer.parseInt(num1);<br>
+              int b1 = Integer.parseInt(num2);<br><br>
+                 
+              System.out.println("a + b = " + (a + b));<br>
+              System.out.println("a - b = " + (a - b));<br>
+              System.out.println("a * b = " + (a * b));<br>
+              System.out.println("a / b = " + (a / b));<br>
+              System.out.println("a % b = " + (a % b));<br>
+              System.out.println("a1 + b1 = " + (a1 + b1)); <br><br>
+                
+          }<br>
+      }
+     </div>
+     <br>
+
+     <!-- *********** Ro *********** -->
+     <table class="table">
+       <thead class="thead-dark">
+         <tr>
+           <th scope="col">Relational operator</th>
+           <th scope="col" style="color:rgb(24, 24, 24);">.</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <th scope="row">></th>
+           <td>Greater than</td>
+         </tr>
+         <tr>
+           <th scope="row"> < </th>
+           <td>Less than</td>
+         </tr>
+         <tr>
+           <th scope="row">>=</th>
+           <td>Greater than or equal to</td>
+         </tr>
+         <tr>
+           <th scope="row"><=</th>
+           <td>Less than or equal to</td>
+         </tr>
+         <tr>
+           <th scope="row">==</th>
+           <td>is equal to</td>
+         </tr>
+         <tr>
+           <th scope="row">!=</th>
+           <td>is not equal to</td>
+         </tr>
+        
+       </tbody>
+     </table>
+
+     for eg. <br>
+
+     <div class="alert alert-primary" role="alert">
+      // Relational Operators <br>
+      import java.io.*;   <br><br>
+      
+      // Driver Class<br>
+      class Main {<br>
+          // main function<br>
+          public static void main(String[] args)<br>
+          {<br>
+              // Comparison operators<br>
+              int a = 10;<br>
+              int b = 3;<br>
+              int c = 5;<br><br>
+      
+              System.out.println("a > b: " + (a > b));<br>
+              System.out.println("a < b: " + (a < b));<br>
+              System.out.println("a >= b: " + (a >= b));<br>
+              System.out.println("a <= b: " + (a <= b));<br>
+              System.out.println("a == c: " + (a == c));<br>
+              System.out.println("a != c: " + (a != c));<br>
+          }<br>
+      }<br>
+     </div>
+     <br>
+     <!-- ********* L0********** -->
+     <table class="table">
+       <thead class="thead-dark">
+         <tr>
+           <th scope="col">Logical operator</th>
+           <th scope="col" style="color:rgb(24, 24, 24);">.</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <th scope="row">&&</th>
+           <td>AND Operator</td>
+         </tr>
+           <th scope="row">||</th>
+           <td>OR Operator</td>
+         </tr>
+         <tr>
+           <th scope="row">!</th>
+           <td>NOT Operator</td>
+         </tr>
+       </tbody>
+     </table>
+
+     for eg. <br>
+
+     <div class="alert alert-primary" role="alert">
+      // Logical operators<br>
+      import java.io.*;<br><br>
+      
+      // Driver Class<br>
+      class Main {<br>
+            // Main Function
+          public static void main (String[] args) {<br>
+              // Logical operators<br>
+              boolean x = true;<br>
+              boolean y = false;<br>
+              <br>
+              System.out.println("x && y: " + (x && y));<br>
+              System.out.println("x || y: " + (x || y));<br>
+              System.out.println("!x: " + (!x));<br>
+          }<br>
+      }<br>
+     </div>
+     <br>
+
+
+     <!-- ********** B0 ************ -->
+     <table class="table">
+       <thead class="thead-dark">
+         <tr>
+           <th scope="col">Bitwise operator</th>
+           <th scope="col" style="color:rgb(24, 24, 24);">.</th>
+         </tr>
+       </thead>
+       <tbody>
+
+           <tr>
+               <th scope="row">&</th>
+               <td>Bitwise AND Operator</td>
+             </tr>
+               <th scope="row">|</th>
+               <td>Bitwise OR Operator</td>
+             </tr>
+             <tr>
+               <th scope="row">^</th>
+               <td>Bitwise XOR</td>
+             </tr>
+         <tr>
+           <th scope="row">~</th>
+           <td>Bitwise Complement</td>
+         </tr>
+           <th scope="row"><<</th>
+           <td>shift left operator</td>
+         </tr>
+         <tr>
+           <th scope="row">>></th>
+           <td>shift right operator</td>
+         </tr>
+       </tbody>
+     </table>
+
+     for eg. <br>
+
+     <div class="alert alert-primary" role="alert">
+      // bitwise operators<br>
+      import java.io.*;  <br><br>
+      
+      // Driver class<br>
+      class Main {<br>
+          // main function<br>
+          public static void main(String[] args)<br>
+          {<br>
+              // Bitwise operators<br>
+              int d = 0b1010;<br>
+              int e = 0b1100;<br>
+              System.out.println("d & e: " + (d & e));<br>
+              System.out.println("d | e: " + (d | e));<br>
+              System.out.println("d ^ e: " + (d ^ e));<br>
+              System.out.println("~d: " + (~d));<br>
+              System.out.println("d << 2: " + (d << 2));<br>
+              System.out.println("e >> 1: " + (e >> 1));<br>
+              System.out.println("e >>> 1: " + (e >>> 1));<br>
+          }<br>
+      }
+     </div>
+       <br>
+<!-- ********** U0 ************ -->
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Unary operator</th>
+      <th scope="col" style="color:rgb(24, 24, 24);">.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">-</th>
+      <td>Unary minus, used for negating the values.</td>
+    </tr>
+    <tr>
+      <th scope="row"> + </th>
+      <td>Unary plus indicates the positive value (numbers are positive without this, however). It performs an automatic conversion to int when the type of its operand is the byte, char, or short. This is called unary numeric promotion.</td>
+    </tr>
+    <tr>
+      <th scope="row">++</th>
+      <td> Increment operator, used for incrementing the value by 1. There are two varieties of increment operators. <br>
+        Post-Increment: Value is first used for computing the result and then incremented. <br>
+        Pre-Increment: Value is incremented first, and then the result is computed.</td>
+    </tr>
+    <tr>
+      <th scope="row">--</th>
+      <td>Decrement operator, used for decrementing the value by 1. There are two varieties of decrement operators.  <br> 
+        Post-decrement: Value is first used for computing the result and then decremented.  <br>
+        Pre-Decrement: The value is decremented first, and then the result is computed. </td>
+    </tr>
+    <tr>
+      <th scope="row">!</th>
+      <td>Logical not operator, used for inverting a boolean value.</td>
+    </tr>
+    
+   
+  </tbody>
+</table>
+
+for eg. <br>
+
+<div class="alert alert-primary" role="alert">
+  // Unary Operators<br>
+  import java.io.*;  <br><br>
+  
+  // Driver Class<br>
+  class Main {<br>
+        // main function<br>
+      public static void main(String[] args)<br>
+      {<br>
+          // Interger declared<br>
+          int a = 10;<br>
+          int b = 10;<br><br>
+  
+          // Using unary operators<br>
+          System.out.println("Postincrement : " + (a++));<br>
+          System.out.println("Preincrement : " + (++a));<br><br>
+  
+          System.out.println("Postdecrement : " + (b--));<br>
+          System.out.println("Predecrement : " + (--b));<br>
+      }<br>
+  }
+
+  </div>
+
+      <!-- ********** Ass0 ************ -->
+      <table class="table">
+       <thead class="thead-dark">
+         <tr>
+           <th scope="col">Assignment operator</th>
+           <th scope="col" style="color:rgb(24, 24, 24);">.</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <th scope="row">=</th>
+           <td>It assigns the right side operand value to the left side operand.</td>
+         </tr>
+         <tr>
+           <th scope="row"> += </th>
+           <td>It assigns the right side operand value to the left side operand.</td>
+         </tr>
+         <tr>
+           <th scope="row">-=</th>
+           <td>It subtracts the right operand from the left operand and assigns the result to the left operand.</td>
+         </tr>
+         <tr>
+           <th scope="row">*=</th>
+           <td>It multiplies the right operand with the left operand and assigns the result to the left operand.</td>
+         </tr>
+         <tr>
+           <th scope="row">/=</th>
+           <td>It divides the left operand with the right operand and assigns the result to the left operand.</td>
+         </tr>
+         
+        
+       </tbody>
+     </table>
+
+     for eg. <br>
+
+     <div class="alert alert-primary" role="alert">
+      // Assignment Operators  <br>
+      import java.io.*;<br><br>
+      
+      // Driver Class<br>
+      class Main {<br>
+          // Main Function<br>
+          public static void main(String[] args)<br>
+          {<br>
+            <br>
+              // Assignment operators<br>
+              int f = 7;<br>
+              System.out.println("f += 3: " + (f += 3));<br>
+              System.out.println("f -= 2: " + (f -= 2));<br>
+              System.out.println("f *= 4: " + (f *= 4));<br>
+              System.out.println("f /= 3: " + (f /= 3));<br>
+              System.out.println("f %= 2: " + (f %= 2));<br>
+              System.out.println("f &= 0b1010: " + (f &= 0b1010));<br>
+              System.out.println("f |= 0b1100: " + (f |= 0b1100));<br>
+              System.out.println("f ^= 0b1010: " + (f ^= 0b1010));<br>
+              System.out.println("f <<= 2: " + (f <<= 2));<br>
+              System.out.println("f >>= 1: " + (f >>= 1));<br>
+              System.out.println("f >>>= 1: " + (f >>>= 1));<br>
+          }<br>
+      }
+     </div>
+       <br>
+
+       <!-- ****************** T0 *********************** -->
+
+       <h4 style="background-color: black; color: aliceblue;">Ternary operator</h4>
+The ternary operator is a shorthand version of the if-else statement. It has three operands and hence the name Ternary.
+<br>
+The general format is:
+<br>
+<div class="alert alert-success" role="alert">condition ? if true : if false</div>
+<div class="alert alert-primary" role="alert">
+// ternary operator.<br>
+public class operators {  <br>
+    public static void main(String[] args)<br>
+    {<br>
+        int a = 20, b = 10, c = 30, result;<br><br>
+
+        // result holds max of three<br>
+        // numbers<br>
+        result<br>
+            = ((a > b) ? (a > c) ? a : c : (b > c) ? b : c);<br>
+        System.out.println("Max of three numbers = " + result);<br>
+    }<br>
+}
+
+</div>
+
+
+       <!-- ******************* conditional statement *********************** -->
+
+       <h3 style="color:rgb(144, 12, 177) ;"> Conditional Statement </h3>
+
+       Decision-making in Java helps to write decision-driven statements and execute a particular set of code based on certain conditions. The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. In this article, we will learn about Java if-else.
+
+<h4>If-Else in Java</h4>
+If- else together represents the set of Conditional statements in Java that are executed according to the condition which is true.
+           <br>
+         Following is the syntax of if-else statements:
+         <br>
+
+         <div class="alert alert-primary" role="alert">
+           if ( condition ){ <br>
+            &nbsp; statements; <br> } <br>
+            else if(/*condition*/) <br>
+             { <br>
+               &nbsp; statements <br>
+             } <br>
+              else { <br>
+               &nbsp; statements; <br> }
+         </div>
+        
+        
         <div class="alert alert-primary" role="alert">
     
         </div>
