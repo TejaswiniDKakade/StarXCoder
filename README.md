@@ -44,4 +44,6 @@ for logout :
 
 
 
+To run this project on your machine first of all you need to download Xampp Server.
+
 you can see the website for more details.
